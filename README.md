@@ -44,18 +44,18 @@ ta được các file trong `/data/examples/stego-files/`
 
 | Tool | File hỗ trợ | Lấy data | Demo |
 |:------|:-------------:|:----------|------:|
-| AudioStego (hideme)   | WAV, MP3 |  | [redirect](./Demo.md/#audiostego-hideme)   |
-| jphide/jpseek         | JPG |  | [redirect](./Demo.md/#jphidejpseek) |
-| jsteg                 | JPG |  | [redirect](./Demo.md/#jsteg) |
-| mp3stego              | MP3 |  | [redirect](./Demo.md/#mp3stego) |
-| openstego             | PNG |  | [redirect](./Demo.md/#openstego) |
-| outguess              | JPG |  | [redirect](./Demo.md/#outguess) |
-| stegano               | PNG |  | [redirect](./Demo.md/#stegano) |
-| Steghide              | JPG, BMP, WAV, AU |  | [redirect](./Demo.md/#steghide) |
-| cloackedpixel         | PNG |  | [redirect](./Demo.md/#cloackedpixel) |
-| LSBSteg               | Images (PNG, BMP,...) in uncompressed format |  | [redirect](./Demo.md/#lsbsteg) |
-| f5                    | JPG |  | [redirect](./Demo.md/#f5) |
-| stegpy                | PNG, GIF, BMP, WebP, WAV |  | [redirect](./Demo.md/#stegpy) |
+| AudioStego (hideme)   | WAV, MP3 | `hideme [input_file] -f` | [redirect](./Demo.md/#audiostego-hideme)   |
+| jphide/jpseek         | JPG | `jpseek [input_file] [output_file]` | [redirect](./Demo.md/#jphidejpseek) |
+| jsteg                 | JPG | `jsteg reveal [input_file] [output_file]` | [redirect](./Demo.md/#jsteg) |
+| mp3stego              | MP3 | `mp3stego-decode -X -P <password> /path/to/input_file.mp3 /path/to/output_file.pcm /path/to/output_file.txt` | [redirect](./Demo.md/#mp3stego) |
+| openstego             | PNG | `openstego extract -sf [input_file] -p <password> -xf [output_file]` | [redirect](./Demo.md/#openstego) |
+| outguess              | JPG | `outguess -r -k <password> [input_file] [output_file]` | [redirect](./Demo.md/#outguess) |
+| stegano               | PNG | `https://stegano.readthedocs.io/en/latest/software.html` | [redirect](./Demo.md/#stegano) |
+| Steghide              | JPG, BMP, WAV, AU | `steghide embed -ef [secret_file] -cf [input_file] -p <password> -sf [output_file]` | [redirect](./Demo.md/#steghide) |
+| cloackedpixel         | PNG | `cloackedpixel extract [input_file] [output_file] <password>` | [redirect](./Demo.md/#cloackedpixel) |
+| LSBSteg               | Images (PNG, BMP,...) in uncompressed format | ` ` | [redirect](./Demo.md/#lsbsteg) |
+| f5                    | JPG | `f5 -t x -i [input_file]` | [redirect](./Demo.md/#f5) |
+| stegpy                | PNG, GIF, BMP, WebP, WAV | `stegpy _[input_file]`  | [redirect](./Demo.md/#stegpy) |
 
 
 

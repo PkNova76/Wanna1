@@ -17,9 +17,10 @@ Làm theo hướng dẫn của [Microsoft][1], sau khi chạy `sudo apt update` 
 
 Lí do là vì file `/etc/apt/sources.list.d/docker.list` bị sai.
 
-=> Thay lại `kali-rolling` thành `buster`
+=> Thay `kali-rolling` thành `buster`
 ```
 deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian kali-rolling stable
+
 -> deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian buster stable
 ```
 
@@ -41,15 +42,14 @@ ta được các file trong `/data/examples/stego-files/`
 
 ### **Demo**
 
-| Tool | File hỗ trợ | Mô tả | Demo |
-|------|-------------|-------|------|
+| Tool | File hỗ trợ | Lấy data | Demo |
+|:------|:-------------:|:----------|------:|
 | AudioStego (hideme)   | WAV, MP3 |  | [redirect](./Demo.md/#audiostego-hideme)   |
 | jphide/jpseek         | JPG |  | [redirect](./Demo.md/#jphidejpseek) |
 | jsteg                 | JPG |  | [redirect](./Demo.md/#jsteg) |
 | mp3stego              | MP3 |  | [redirect](./Demo.md/#mp3stego) |
 | openstego             | PNG |  | [redirect](./Demo.md/#openstego) |
 | outguess              | JPG |  | [redirect](./Demo.md/#outguess) |
-| spectrology           | WAV |  | [redirect](./Demo.md/#spectrology) |
 | stegano               | PNG |  | [redirect](./Demo.md/#stegano) |
 | Steghide              | JPG, BMP, WAV, AU |  | [redirect](./Demo.md/#steghide) |
 | cloackedpixel         | PNG |  | [redirect](./Demo.md/#cloackedpixel) |

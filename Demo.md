@@ -16,7 +16,6 @@ Table of contents:
   - [LSBSteg](#lsbsteg)
   - [f5](#f5)
   - [stegpy](#stegpy)
-- [GUI Tools](#gui-tools)
 
 ## AudioStego (hideme)
 
@@ -35,7 +34,7 @@ hideme [input_file] -f
 <pre>
 root@65b55b89edc2:/data/examples/stego-files/mp3# ls
 hideme.mp3  mp3stego.mp3  output.txt
-root@65b55b89edc2:/data/examples/stego-files/mp3# <b>hideme hideme.mp3 -f</b>
+root@65b55b89edc2:/data/examples/stego-files/mp3# <b><em>hideme hideme.mp3 -f</em></b>
 Doing it boss! 
 Looking for the hidden message...
 File detected. Retrieving it...
@@ -44,9 +43,9 @@ File has been saved as: output.txt
 Recovering process has finished successfully.
 Cleaning memory...
 root@65b55b89edc2:/data/examples/stego-files/mp3# ls
-hideme.mp3  mp3stego.mp3  <b>output.txt</b>
+hideme.mp3  mp3stego.mp3  <b><em>output.txt</em></b>
 root@65b55b89edc2:/data/examples/stego-files/mp3# cat output.txt 
-<b>This is a very secret message!</b>
+<b><em>This is a very secret message!</em></b>
 </pre>
 
 ## jphide/jpseek
@@ -67,18 +66,18 @@ jpseek [input_file] [output_file]
 <pre>
 root@65b55b89edc2:/data/examples/stego-files/mp3# ls
 hideme.mp3  mp3stego.mp3  output.txt
-root@65b55b89edc2:/data/examples/stego-files/mp3# <b>hideme hideme.mp3 -f</b>
+root@65b55b89edc2:/data/examples/stego-files/mp3# <b><em>hideme hideme.mp3 -f</em></b>
 Doing it boss! 
 Looking for the hidden message...
 File detected. Retrieving it...
 Message recovered size: 31 bytes
-File has been saved as: <b>output.txt</b>
+File has been saved as: <b><em>output.txt</em></b>
 Recovering process has finished successfully.
 Cleaning memory...
 root@65b55b89edc2:/data/examples/stego-files/mp3# ls
 hideme.mp3  mp3stego.mp3  output.txt
 root@65b55b89edc2:/data/examples/stego-files/mp3# cat output.txt 
-<b>This is a very secret message!</b>
+<b><em>This is a very secret message!</em></b>
 </pre>
 
 ## jsteg
@@ -96,10 +95,10 @@ jsteg reveal [input_file] [output_file]
 **Demo**
 <pre>
 root@65b55b89edc2:/data# ls
-<b>ORIGINAL.jpg</b>  ORIGINAL.mp3  ORIGINAL.png  ORIGINAL.wav  README.md  examples  <b>secret_message.txt</b>
+<b><em>ORIGINAL.jpg</em></b>  ORIGINAL.mp3  ORIGINAL.png  ORIGINAL.wav  README.md  examples  <b><em>secret_message.txt</em></b>
 root@65b55b89edc2:/data# cat secret_message.txt 
-<b>This is a very secret message!</b>
-root@65b55b89edc2:/data#<b> jphide ORIGINAL.jpg output.jpg secret_message.txt</b>
+<b><em>This is a very secret message!</em></b>
+root@65b55b89edc2:/data#<b><em> jphide ORIGINAL.jpg output.jpg secret_message.txt</em></b>
 
 jphide, version 0.3 (c) 1998 Allan Latham <alatham@flexsys-group.com>
 
@@ -112,8 +111,8 @@ See the GNU Public Licence for full details.
 Passphrase: 
 Re-enter  : 
 root@65b55b89edc2:/data# ls
-ORIGINAL.jpg  ORIGINAL.mp3  ORIGINAL.png  ORIGINAL.wav  README.md  examples  <b>output.jpg</b>  secret_message.txt
-root@65b55b89edc2:/data#<b> jpseek output.jpg output.txt</b>
+ORIGINAL.jpg  ORIGINAL.mp3  ORIGINAL.png  ORIGINAL.wav  README.md  examples  <b><em>output.jpg</em></b>  secret_message.txt
+root@65b55b89edc2:/data#<b><em> jpseek output.jpg output.txt</em></b>
 
 jpseek, version 0.3 (c) 1998 Allan Latham <alatham@flexsys-group.com>
 
@@ -126,9 +125,9 @@ See the GNU Public Licence for full details.
 Passphrase: 
 root@65b55b89edc2:/data# ls
 ORIGINAL.jpg  ORIGINAL.png  README.md  output.jpg  secret_message.txt
-ORIGINAL.mp3  ORIGINAL.wav  examples   <b>output.txt</b>
+ORIGINAL.mp3  ORIGINAL.wav  examples   <b><em>output.txt</em></b>
 root@65b55b89edc2:/data# cat output.txt 
-<b>This is a very secret message!</b>
+<b><em>This is a very secret message!</em></b>
 </pre>
 
 ## mp3stego
@@ -152,7 +151,7 @@ mp3stego-decode -X -P <password> /path/to/input_file.mp3 /path/to/output_file.pc
 <pre>
 root@65b55b89edc2:/data/examples/stego-files/mp3# ls
 hideme.mp3  mp3stego.mp3
-root@65b55b89edc2:/data/examples/stego-files/mp3# <b>mp3stego-decode -X -P abcd /data/examples/stego-files/mp3/mp3stego.mp3 /data/examples/stego-files/mp3/output.pcm /data/examples/stego-files/mp3/output.txt</b>
+root@65b55b89edc2:/data/examples/stego-files/mp3# <b><em>mp3stego-decode -X -P abcd /data/examples/stego-files/mp3/mp3stego.mp3 /data/examples/stego-files/mp3/output.pcm /data/examples/stego-files/mp3/output.txt</em></b>
 MP3StegoEncoder 1.1.17
 See README file for copyright info
 Input file = '/data/examples/stego-files/mp3/mp3stego.mp3'  output file = '/data/examples/stego-files/mp3/output.pcm'
@@ -166,9 +165,9 @@ Decoding of "/data/examples/stego-files/mp3/mp3stego.mp3" is finished
 The decoded PCM output file name is "/data/examples/stego-files/mp3/output.pcm"
 WARNING: if you used relative paths, you find your results relative to "/opt/mp3stego/MP3Stego_1_1_18/MP3Stego/"
 root@65b55b89edc2:/data/examples/stego-files/mp3# ls
-hideme.mp3  mp3stego.mp3  <b>output.pcm  output.txt</b>
+hideme.mp3  mp3stego.mp3  <b><em>output.pcm  output.txt</em></b>
 root@65b55b89edc2:/data/examples/stego-files/mp3# cat output.txt
-<b>This is a very secret message!</b>
+<b><em>This is a very secret message!</em></b>
 </pre>
 
 
@@ -188,10 +187,10 @@ openstego extract -sf [input_file] -p <password> -xf [output_file]
 <pre>
 root@d4b18ad1112d:/data/examples/stego-files/png# ls  
 cloackedpixel.png  openstego.png  stegano-lsb.png  stegano-red.png
-root@d4b18ad1112d:/data/examples/stego-files/png# <b>openstego extract -sf openstego.png -p abcd</b>
+root@d4b18ad1112d:/data/examples/stego-files/png# <b><em>openstego extract -sf openstego.png -p abcd</em></b>
 Extracted file: secret_message.txt
 root@d4b18ad1112d:/data/examples/stego-files/png# cat secret_message.txt 
-<b>This is a very secret message!</b>
+<b><em>This is a very secret message!</em></b>
 </pre>
 
 ## outguess
@@ -210,12 +209,12 @@ outguess -r -k <password> [input_file] [output_file]
 <pre>
 root@e6da5eb4b90f:/data/examples/stego-files/jpg# ls
 jsteg.jpg  outguess-0.13.jpg  outguess.jpg  steghide.jpg
-root@e6da5eb4b90f:/data/examples/stego-files/jpg# <b>outguess -r -k abcd outguess.jpg output.txt</b>
+root@e6da5eb4b90f:/data/examples/stego-files/jpg# <b><em>outguess -r -k abcd outguess.jpg output.txt</em></b>
 Reading outguess.jpg....
 Extracting usable bits:   139630 bits
 Steg retrieve: seed: 176, len: 31
 root@e6da5eb4b90f:/data/examples/stego-files/jpg# cat output.txt
-<b>This is a very secret message!</b>
+<b><em>This is a very secret message!</em></b>
 </pre>
 
 ## stegano
@@ -229,13 +228,13 @@ https://stegano.readthedocs.io/en/latest/software.html
 <pre>
 root@e6da5eb4b90f:/data/examples/stego-files/png# ls
 cloackedpixel.png  openstego.png  secret_message.txt  stegano-lsb.png  stegano-red.png
-root@e6da5eb4b90f:/data/examples/stego-files/png# <b>stegano-lsb reveal -i stegano-lsb.png </b>
-<b>VGhpcyBpcyBhIHZlcnkgc2VjcmV0IG1lc3NhZ2UhCg==</b>
-root@e6da5eb4b90f:/data/examples/stego-files/png#<b> stegano-lsb reveal -i stegano-lsb.png -e UTF-8 -o output.txt</b>  
+root@e6da5eb4b90f:/data/examples/stego-files/png# <b><em>stegano-lsb reveal -i stegano-lsb.png </em></b>
+<b><em>VGhpcyBpcyBhIHZlcnkgc2VjcmV0IG1lc3NhZ2UhCg==</em></b>
+root@e6da5eb4b90f:/data/examples/stego-files/png#<b><em> stegano-lsb reveal -i stegano-lsb.png -e UTF-8 -o output.txt</em></b>  
 root@e6da5eb4b90f:/data/examples/stego-files/png# ls
-cloackedpixel.png  openstego.png  <b>output.txt</b>  secret_message.txt  stegano-lsb.png  stegano-red.png
+cloackedpixel.png  openstego.png  <b><em>output.txt</em></b>  secret_message.txt  stegano-lsb.png  stegano-red.png
 root@e6da5eb4b90f:/data/examples/stego-files/png# cat output.txt 
-<b>This is a very secret message!</b>
+<b><em>This is a very secret message!</em></b>
 </pre>
 
 ## steghide
@@ -253,7 +252,7 @@ steghide extract -sf [input_file] -p <password>
 <pre>
 root@e6da5eb4b90f:/data/examples/stego-files/wav# ls   
 hideme.wav  steghide.wav
-root@e6da5eb4b90f:/data/examples/stego-files/wav#<b> steghide info steghide.wav -p abcd</b>
+root@e6da5eb4b90f:/data/examples/stego-files/wav#<b><em> steghide info steghide.wav -p abcd</em></b>
 "steghide.wav":
   format: wave audio, PCM encoding
   capacity: 302.1 KB
@@ -261,10 +260,10 @@ root@e6da5eb4b90f:/data/examples/stego-files/wav#<b> steghide info steghide.wav 
     size: 31.0 Byte
     encrypted: rijndael-128, cbc
     compressed: yes
-root@e6da5eb4b90f:/data/examples/stego-files/wav#<b> steghide extract -sf steghide.wav -p abcd</b>
+root@e6da5eb4b90f:/data/examples/stego-files/wav#<b><em> steghide extract -sf steghide.wav -p abcd</em></b>
 wrote extracted data to "secret_message.txt".
 root@e6da5eb4b90f:/data/examples/stego-files/wav# cat secret_message.txt 
-<b>This is a very secret message!</b>
+<b><em>This is a very secret message!</em></b>
 </pre>
 
 ## cloackedpixel
@@ -283,11 +282,11 @@ cloackedpixel extract [input_file] [output_file] <password>
 <pre>
 root@e6da5eb4b90f:/data/examples/stego-files/png# ls
 cloackedpixel.png  openstego.png  stegano-lsb.png  stegano-red.png
-root@e6da5eb4b90f:/data/examples/stego-files/png# <b>cloackedpixel extract cloackedpixel.png output.txt abcd</b>
+root@e6da5eb4b90f:/data/examples/stego-files/png# <b><em>cloackedpixel extract cloackedpixel.png output.txt abcd</em></b>
 [+] Image size: 1280x959 pixels.
 [+] Written extracted data to output.txt.
 root@e6da5eb4b90f:/data/examples/stego-files/png# cat output.txt 
-<b>This is a very secret message!</b>
+<b><em>This is a very secret message!</em></b>
 </pre>
 
 ## LSBSteg
@@ -310,7 +309,7 @@ f5 -t x -i [input_file]
 <pre>
 root@e6da5eb4b90f:/data/examples# ls          
 ORIGINAL.jpg  ORIGINAL.mp3  ORIGINAL.png  ORIGINAL.wav  create_examples.sh  secret_message.txt  stego-files  stego.bmp
-root@e6da5eb4b90f:/data/examples#<b> f5 -t e -i ORIGINAL.jpg -o output.jpg -d 'super secret message'</b>
+root@e6da5eb4b90f:/data/examples#<b><em> f5 -t e -i ORIGINAL.jpg -o output.jpg -d 'super secret message'</em></b>
 2022-07-11 19:44:40,539 [jpeg_encoder] DCT/quantisation starts
 2022-07-11 19:44:40,539 [jpeg_encoder] 1280 x 959
 2022-07-11 19:44:42,078 [jpeg_encoder] got 1843200 DCT AC/DC coefficients
@@ -336,14 +335,14 @@ root@e6da5eb4b90f:/data/examples#<b> f5 -t e -i ORIGINAL.jpg -o output.jpg -d 's
 root@e6da5eb4b90f:/data/examples# ls 
 ORIGINAL.jpg  ORIGINAL.png  create_examples.sh  secret_message.txt  stego.bmp
 ORIGINAL.mp3  ORIGINAL.wav  output.jpg          stego-files
-root@e6da5eb4b90f:/data/examples# <b>f5 -t x -i output.jpg </b>
+root@e6da5eb4b90f:/data/examples# <b><em>f5 -t x -i output.jpg </em></b>
 2022-07-11 19:45:19,655 [jpeg_decoder] huffman decoding starts
 2022-07-11 19:45:20,759 [jpeg_decoder] permutation starts
 2022-07-11 19:45:25,174 [jpeg_decoder] 1843200 indices shuffled
 2022-07-11 19:45:25,174 [jpeg_decoder] extraction starts
 2022-07-11 19:45:25,174 [jpeg_decoder] length of embedded file: 20 bytes
 2022-07-11 19:45:25,174 [jpeg_decoder] (1, 63, 6) code used
-<b>super secret message</b>
+<b><em>super secret message</em></b>
 </pre>
 
 ## stegpy
@@ -357,5 +356,3 @@ Lấy data
 ```
 stegpy _[input_file]
 ```
-
-# GUI Tools

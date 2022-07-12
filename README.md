@@ -28,6 +28,7 @@ deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.
 
 Done! Làm tiếp theo hướng dẫn trong trang của Microsoft là cài xong Docker.
 
+[1]: https://docs.docker.com/engine/install/debian/
 ## **Tool sử dụng CLI**
 
 Để sử dụng stego-toolkit, sau khi cài đặt Docker và clone repo về, chỉ cần chạy `sudo .../stego-toolkit/bin/build.sh` để build image và sau đó `sudo .../stego-toolkit/bin/run.sh` để chạy tool. Sau khi chạy ta sẽ bên trong bash shell của container. Ta chỉ cần thêm file cần phân tích vào `.../stego-toolkit/data/` và vào shell của tool để sử dụng các tool đó.
@@ -61,6 +62,14 @@ ta được các file trong `/data/examples/stego-files/`
 
 ## **Tool sử dụng GUI**
 
-[1]: https://docs.docker.com/engine/install/debian/
+Để sử dụng các tool có GUI, chạy `start_ssh.sh`, làm theo hướng dẫn.
+
+![GUI_start_ssh](./image/GUI_start_ssh.png)
+
+![GUI_other_terminal](./image/GUI_other_terminal.png)
+
+**Demo**
+
+
 
 # Volatility

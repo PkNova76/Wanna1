@@ -70,6 +70,6 @@ ta được các file trong `/data/examples/stego-files/`
 
 **Demo**
 
-
+![demo](./image/demo.gif)
 
 # Volatility
